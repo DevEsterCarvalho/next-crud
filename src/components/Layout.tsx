@@ -7,11 +7,14 @@ interface LayoutProps {
 
 export default function Layout(props: LayoutProps) {
 	return (
-		<div className="flex justify-center items-center min-h-screen bg-gray-100">
-			<div className="flex flex-col w-2/3 bg-sky-100 p-4 rounded shadow">
-				<Titulo>{props.titulo}</Titulo>
-				<div>{props.children}</div>
-			</div>
+		<div
+			className={`
+            flex flex-col w-2/3
+            bg-white text-gray-800 rounded-md
+        `}
+		>
+			<Titulo>{props.titulo}</Titulo>
+			<div className="p-6">{props.children}</div>
 		</div>
 	);
 }

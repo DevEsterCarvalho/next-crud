@@ -2,8 +2,16 @@ import Layout from "../components/Layout";
 
 export default function Home() {
 	return (
-		<div className="h-screen flex justify-center items-center bg-red-300">
-			<h1 className="text-3xl font-bold text-white">Teste de Tailwind</h1>
+		<div
+			className={`
+			flex justify-center items-center h-screen
+			bg-gradient-to-r from-blue-500 to-purple-500
+			text-white
+		  `}
+		>
+			<Layout titulo="Cadastro Simples">
+				<span>Conteudo</span>
+			</Layout>
 		</div>
 	);
 }

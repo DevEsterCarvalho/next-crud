@@ -1,4 +1,5 @@
-@import "tailwindcss/preflight";
+@tailwind base;
+@tailwind components;
 @tailwind utilities;
 
 :root {
@@ -13,6 +14,13 @@
 	}
 }
 
+html,
+body,
+#__next {
+	height: 100%;
+}
+
 body {
+	background-color: var(--background);
 	color: var(--foreground);
 }
